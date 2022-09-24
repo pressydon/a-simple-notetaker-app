@@ -1,0 +1,199 @@
+/* *, *::after, *::before{
+    box-sizing: border-box;
+} */
+
+
+.container{
+   
+    margin: auto;
+    background: yellowgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+}
+.container h1{
+    border-color: red;
+    border: 2px solid;
+    padding-top: 20px;
+    margin:auto;
+    width: 200px;
+    margin-top: 30px;
+    background: whitesmoke;
+
+}
+.note-form{
+    margin:10px;
+    display :grid;
+    justify-content: center;
+}
+.note-form input{
+width: 500px;
+height:30px;
+}
+.note-form button{
+    width: 70px;
+    justify-self: center;
+    margin-top: 10px;
+    background: white;
+    border: none;
+    border-radius: 5px;
+    padding:10px 20px;
+}
+.feedback{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 20px;
+    
+}
+.modal{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 5000;
+    background-color: white;
+    width: 500px;
+    /* max-width: 30%; */
+
+}
+/* .modal.active{
+    transform: translate(-50%,-50%) scale(1);
+} */
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 50001;
+}
+.modal-body{
+    margin-top: -10px;
+    z-index: 50001;
+}
+.close-button{
+    cursor:pointer;
+    font-size: 1.2rem;
+    font-weight: bold ;
+    z-index: 50001;
+
+}
+
+
+ #overlay{
+    position: fixed;
+    
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    z-index: 500;
+    background-color:rgba(0,0,0,0.5) ;
+    display: none;
+   
+} 
+table{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 80px;
+    text-align: center;
+    table-layout: fixed;
+    
+}
+td div{
+    height: 80px;
+    overflow: hidden;
+    padding: 10px;
+
+}
+tr th{
+    display: none;
+}
+.delete{
+    background: transparent;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+td{
+    width: 300px;
+    
+    border: 2px solid red;
+    overflow-y: hidden;
+    background: rgba(97, 114, 102, 0.267);
+}
+.view-more-button{
+   border-radius: 30px;
+   border: none;
+   cursor: pointer;
+   z-index: 50000;
+}
+/* #overlay.active{
+    opacity:1;
+    pointer-events: all;
+} */
+
+@media (max-width:800px) {
+    .note-form input{
+        width: 300px;
+        height:30px;
+        }
+        table{
+           
+            margin-left: 50px;
+           
+        }
+}
+
+@media (max-width:600px) {
+    .note-form input{
+       
+        height:40px;
+        }
+        table{
+           
+            margin-left: 50px;
+           
+        }
+}
+
+@media (max-width:465px){
+    table{
+           
+        margin-left: 60px;
+       
+    }
+}
+
+
+@media (max-width:316px) {
+
+    .container h1{
+        font-size: 25px;
+        padding-top: 10px;
+        margin:auto;
+        width: 100px;
+        margin-top: 30px;
+        background: whitesmoke;
+    
+    }
+    .note-form input{
+       width: 200px;
+        height:40px;
+        }
+        table{
+           
+            margin-left: 32px;
+           
+        }
+}

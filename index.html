@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Note Taker</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Note Taker</h1>
+        </header>
+        <form class="note-form">
+            <label for="note">Add New Note</label>
+            <input type="text" name="note" placeholder="notes">
+            <button>Add Note</button>
+        </form>
+        <table >
+          <tr  height="30px">
+            <th>Notes</th>
+            <th>Note Content</th>
+            <th>viewDets</th>
+          </tr>
+          <!-- <tr  height="30px">
+            <td >Note <span class="note">1</span> </td>
+            <td> <div class="para">zzzLorem, ipsum dolor sit amet consectetur adipisicing elit. Eum cum aperiam quas nam itaque voluptas, dolor nulla accusantium sint est.</div></td>
+            <td> <button class="view-more-button" >View Details</button></td>
+          </tr> -->
+        </table>
+      <div class="feedback">
+         
+    
+          <div id="overlay">
+            <div class="modal " >
+              <div class="modal-header">
+                <h6>Note <span class="note">1</span> </h6>
+                <button   class="close-button">&times;</button>
+              </div>
+              <p class="modal-body"> lorem ipsim this is for the contents of the note hyday  chdbuhaabhchcjbhuchuhbc</p>
+            </div>
+          </div>
+         
+
+          <!-- <div class="modal " id="modal">
+            <div class="modal-header">
+              <h6>Note 2</h6>
+              <button   class="close-button">&times;</button>
+            </div>
+            <p class="modal-body"> em ipsim this is for the contents of the note hyday  chdbuhaabhchcjbhuchuhbc</p>
+          </div>
+          <div id="overlay"></div>
+          <button data-modal-target="#modal">View Details</button> -->
+      <!-- </div> -->
+
+
+
+    </div>
+    
+
+    <script src="sandbox.js"></script>
+</body>
+</html>
